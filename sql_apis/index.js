@@ -21,10 +21,6 @@ const connection = mysql.createPool({
 // });
 
 
-sqlRoute.get("/",(req,res)=>{
-  res.send("helloworld")
-})
-
 sqlRoute.post('/query', (req, res) => {
     const query = req.body.query;
   
